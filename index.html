@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-1">
+                <h1>Body Mass Calculator (BMI) </h1>
+            </div>
+            <div class="col-2">
+                <div class="measurement-btn">
+                    <div class="radio metric-btn">
+                        <input type="radio" class="metric-radio" value="Metric" >
+                        <label for="">Metric</label>
+                    </div>
+                    <div class=" radio imperial-btn">
+                        <input type="radio" class="imperial-radio" value="Metric">
+                        <label for="">Imperial</label>
+                    </div>
+                </div>
+                <div class="bmi-form">
+                    <label for="">Name</label>
+                    <input type="text" class="name">
+                    <br>
+                    <!-- Metric form -->
+                    <div class="metric-form">
+                        <label for="">Height</label>
+                        <div class="height-weight">
+                            <input type="number" class="height-meter">
+                            <select name="size" class="measurement">
+                                <option value="meter">Meter</option>
+                            </select>
+
+                        </div>
+                        <br>
+
+                        <label for="">Weight</label>
+                        <div class="height-weight">
+                            <input type="number" class="weight-kg">
+                            <select name="size" class="measurement">
+                                <option value="Kg">Kg</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Imperial Form -->
+
+                    <div class="imperial-form">
+                        <label for="">Height</label>
+                        <div class="height-weight">
+                            <input type="number" class="height-inch">
+                            <select name="size" class="measurement">
+                                <option value="Inch">Inch</option>
+                            </select>
+
+                        </div>
+                        <br>
+
+                        <label for="">Weight</label>
+                        <div class="height-weight">
+                            <input type="number" class="weight-lbs">
+                            <select name="size" class="measurement">
+                                <option value="Lb">Lbs</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <br>
+                    <div class="button">
+                        <button class="submit-btn">Calculate BMI</button>
+                    </div>
+                    <br>
+                    <div class="result">
+                        <h1>Result:</h1>
+                            <p class="result-msg"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
