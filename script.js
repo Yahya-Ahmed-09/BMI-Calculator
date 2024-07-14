@@ -52,7 +52,7 @@ let measurement = () => {
             result.innerText = `Congratulations ${userName.value} , your BMI is within the normal weight range at ${BMI}`
         } else if(BMI > 25 && BMI < 29.9){
             result.innerText = `Oops ${userName.value}, your BMI of ${BMI} falls into the overweight category.`;
-        } else if(BMI >= 30){
+        } else if(BMI >= 30 && BMI <= 70){
             result.innerText = `Warning, your BMI is ${BMI}, indicating obesity.`;
         } else{
             result.innerText = "Please enter Correct Information"
